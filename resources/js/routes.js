@@ -3,13 +3,22 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
-import test from "./components/create";
+import create from "./components/create";
+import index from "./components/index";
+import edit from "./components/edit";
 
 const routes = [
     {
         path: "/post/create",
-        name: "create",
-        component: test
+        component: create
+    },
+    {
+        path: "/",
+        component: index
+    },
+    {
+        path: "/post/edit/:id",
+        component: edit
     }
 ];
 
