@@ -116,6 +116,10 @@ class PostController extends Controller
             return response()->json(['status'=>'success','data'=>$post],200);
         }else{
             return response()->json(['status'=>'error'],500);
-        }
+        }        
+    }
+    private function x()
+    {
+        return 'test';
     }
 }
